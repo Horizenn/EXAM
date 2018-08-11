@@ -1,0 +1,452 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\EXAM.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\EXAM.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 EXAM"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "EXAM 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2018",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_LOGIN DIALOGEX 0, 0, 320, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "登录"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "确定",IDC_BUTTON1,57,155,50,14
+    PUSHBUTTON      "取消",IDC_BUTTON2,133,155,50,14
+    PUSHBUTTON      "注册",IDC_BUTTON3,214,155,50,14
+    LTEXT           "用户类型：",IDC_STATIC,65,34,41,8
+    LTEXT           "用户名：",IDC_STATIC,65,73,33,8
+    LTEXT           "密码：",IDC_STATIC,65,111,25,8
+    COMBOBOX        IDC_COMBO1,148,31,80,52,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,147,69,73,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,147,107,73,14,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+IDD_EXAMONLINE DIALOGEX 0, 0, 255, 190
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "学生考试系统"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "试题题目",IDC_STATIC,15,13,226,24,BS_CENTER
+    CTEXT           "题号",IDC_STATIC2,25,23,33,8,SS_CENTERIMAGE
+    CTEXT           "试题",IDC_STATIC1,65,22,170,11,SS_CENTERIMAGE | 
+                    WS_BORDER,WS_EX_ACCEPTFILES
+    GROUPBOX        "试题选项",IDC_STATIC,15,51,221,101,BS_CENTER
+    CONTROL         "A",IDC_RADIO_A,"Button",BS_AUTORADIOBUTTON | BS_CENTER | 
+                    BS_VCENTER | BS_PUSHLIKE,36,68,182,10
+    CONTROL         "B",IDC_RADIO_B,"Button",BS_AUTORADIOBUTTON | BS_CENTER | 
+                    BS_VCENTER | BS_PUSHLIKE,36,87,182,10
+    CONTROL         "C",IDC_RADIO_C,"Button",BS_AUTORADIOBUTTON | BS_CENTER | 
+                    BS_VCENTER | BS_PUSHLIKE,36,108,182,10
+    CONTROL         "D",IDC_RADIO_D,"Button",BS_AUTORADIOBUTTON | BS_CENTER | 
+                    BS_VCENTER | BS_PUSHLIKE,36,128,182,10
+    PUSHBUTTON      "上一题",IDC_BUTTON1,30,161,50,14
+    PUSHBUTTON      "下一题",IDC_BUTTON4,167,160,50,14
+END
+
+IDD_EXAMINFO DIALOG DISCARDABLE  0, 0, 218, 105
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "考试信息"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "欢迎使用在线考试系统",IDC_STATIC,60,20,98,15,
+                    SS_CENTERIMAGE
+    CTEXT           "请选择要考试的科目：",IDC_STATIC,22,40,83,13,
+                    SS_CENTERIMAGE
+    COMBOBOX        IDC_SUBJECTCOMBO,127,39,48,81,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "确定",IDC_BUTTON1,42,71,50,14
+    PUSHBUTTON      "取消",IDC_BUTTON2,124,71,50,14
+END
+
+IDD_EXAMRESULT DIALOG DISCARDABLE  0, 0, 266, 180
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "考试成绩"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,108,137,50,14
+    CTEXT           "Static",IDC_STATIC1,17,38,107,8,SS_CENTERIMAGE
+    CTEXT           "Static",IDC_STATIC2,145,39,94,8,SS_CENTERIMAGE
+    CTEXT           "Static",IDC_STATIC3,28,68,84,8,SS_CENTERIMAGE
+    CTEXT           "Static",IDC_STATIC4,161,68,66,8,SS_CENTERIMAGE
+    CTEXT           "Static",IDC_STATIC5,95,105,74,8,SS_CENTERIMAGE
+END
+
+IDD_REGISTER DIALOG DISCARDABLE  0, 0, 267, 305
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "注册信息"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "用户注册（只能学生注册）",IDC_STATIC,65,20,128,8
+    GROUPBOX        "必填信息",IDC_STATIC,16,48,234,117
+    LTEXT           "用户名：",IDC_STATIC,20,65,45,8
+    LTEXT           "密码：",IDC_STATIC,20,85,45,8
+    LTEXT           "重复密码：",IDC_STATIC,20,105,45,8
+    LTEXT           "真实姓名：",IDC_STATIC,20,125,50,8
+    LTEXT           "身份证号：",IDC_STATIC,20,145,50,8
+    EDITTEXT        IDC_EDIT1,90,65,90,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,90,85,90,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,90,105,90,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,90,125,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,90,145,130,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "检查用户名",IDC_BUTTON1,185,65,50,14
+    LTEXT           "",IDC_STATIC1,185,85,60,8
+    GROUPBOX        "选填信息",IDC_STATIC,15,180,235,80
+    LTEXT           "年龄：",IDC_STATIC,20,200,45,8
+    LTEXT           "性别：",IDC_STATIC,20,220,45,8
+    LTEXT           "联系电话：",IDC_STATIC,20,240,50,8
+    EDITTEXT        IDC_EDIT6,90,200,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,90,240,85,14,ES_AUTOHSCROLL
+    CONTROL         "男",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,90,220,20,10
+    CONTROL         "女",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,120,220,20,
+                    10
+    PUSHBUTTON      "注册",IDC_BUTTON2,60,280,50,14
+    PUSHBUTTON      "取消",IDC_BUTTON3,160,280,50,14
+    CTEXT           "岁",IDC_STATIC,135,200,10,15,SS_CENTERIMAGE
+END
+
+IDD_TEXTMANAGE DIALOG DISCARDABLE  0, 0, 322, 249
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "后台管理"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tree1",IDC_TREE1,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,
+                    7,17,85,163
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,100,17,210,163
+    PUSHBUTTON      "增加科目",IDC_BUTTON1,25,195,50,14
+    PUSHBUTTON      "新增试题",IDC_BUTTON2,100,195,50,14
+    PUSHBUTTON      "修改试题",IDC_BUTTON3,175,195,50,14
+    PUSHBUTTON      "删除试题",IDC_BUTTON4,245,195,50,14
+    PUSHBUTTON      " 查看成绩",IDC_BUTTON5,137,218,50,14
+END
+
+IDD_ADDTEST_DIALOG DIALOG DISCARDABLE  0, 0, 239, 294
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "增加试题"
+FONT 10, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,40,255,50,14
+    PUSHBUTTON      "取消",IDCANCEL,135,255,50,14
+    CTEXT           "题目：",IDC_STATIC,30,45,27,15,SS_CENTERIMAGE
+    CTEXT           "答案：",IDC_STATIC,30,75,27,17,SS_CENTERIMAGE
+    CTEXT           "选项A：",IDC_STATIC,30,105,31,17,SS_CENTERIMAGE
+    CTEXT           "选项B：",IDC_STATIC,30,135,31,17,SS_CENTERIMAGE
+    CTEXT           "选项C：",IDC_STATIC,30,165,31,17,SS_CENTERIMAGE
+    CTEXT           "选项D：",IDC_STATIC,30,190,31,17,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT1,95,45,117,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,95,75,47,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,95,105,70,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,95,135,70,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,95,165,70,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,95,190,70,17,ES_AUTOHSCROLL
+    CTEXT           "分数：",IDC_STATIC,30,220,31,17,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT7,95,220,70,17,ES_AUTOHSCROLL
+END
+
+IDD_ADDSUBJECT_DIALOG DIALOG DISCARDABLE  0, 0, 224, 151
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "增加科目"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT1,92,68,40,14,ES_AUTOHSCROLL
+    CTEXT           "请输入要增加的科目名：",IDC_STATIC,57,47,110,8
+    PUSHBUTTON      "确定",IDOK,50,103,50,14
+    PUSHBUTTON      "取消",IDC_BUTTON2,125,104,50,14
+END
+
+IDD_TESTCHANGE_DIALOG DIALOG DISCARDABLE  0, 0, 199, 214
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "修改试题"
+FONT 10, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,35,185,50,14
+    PUSHBUTTON      "取消",IDCANCEL,130,185,50,14
+    CTEXT           "题目：",IDC_STATIC,45,30,23,13,SS_CENTERIMAGE
+    CTEXT           "答案：",IDC_STATIC,45,55,23,15,SS_CENTERIMAGE
+    CTEXT           "选项A：",IDC_STATIC,45,80,27,15,SS_CENTERIMAGE
+    CTEXT           "选项B：",IDC_STATIC,45,105,27,15,SS_CENTERIMAGE
+    CTEXT           "选项C：",IDC_STATIC,45,130,27,15,SS_CENTERIMAGE
+    CTEXT           "选项D：",IDC_STATIC,45,155,27,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT1,90,30,100,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,90,55,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,90,80,60,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,90,105,60,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,90,130,60,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,90,155,60,14,ES_AUTOHSCROLL
+END
+
+IDD_TEXTGRADE_DIALOG DIALOG DISCARDABLE  0, 0, 163, 179
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "成绩查询"
+FONT 10, "MS Sans Serif"
+BEGIN
+    CTEXT           "学生ID：",IDC_STATIC,30,40,31,11,SS_CENTERIMAGE
+    CTEXT           "科目名称：",IDC_STATIC,25,80,45,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT1,84,39,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,83,79,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "确定",IDC_BUTTON1,20,130,50,14
+    PUSHBUTTON      "取消",IDC_BUTTON2,95,130,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "EXAM Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "EXAM\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2018\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "EXAM.EXE\0"
+            VALUE "ProductName", "EXAM 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_EXAMONLINE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+
+    IDD_EXAMINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 211
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+
+    IDD_EXAMRESULT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 259
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_REGISTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 260
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 298
+    END
+
+    IDD_TEXTMANAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 315
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 242
+    END
+
+    IDD_ADDTEST_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 287
+    END
+
+    IDD_ADDSUBJECT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 217
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_TESTCHANGE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 192
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 207
+    END
+
+    IDD_TEXTGRADE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 156
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 172
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 EXAM(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\EXAM.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

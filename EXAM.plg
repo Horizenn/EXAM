@@ -1,0 +1,66 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: EXAM - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\wu\AppData\Local\Temp\RSPC01A.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/EXAM.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\ExamOnline\EXAM\TextGrade.cpp"
+]
+Creating command line "cl.exe @C:\Users\wu\AppData\Local\Temp\RSPC01A.tmp" 
+Creating temporary file "C:\Users\wu\AppData\Local\Temp\RSPC01B.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/EXAM.pdb" /debug /machine:I386 /out:"Debug/EXAM.exe" /pdbtype:sept 
+.\Debug\ADOConn.obj
+.\Debug\EXAM.obj
+.\Debug\EXAMDlg.obj
+.\Debug\ExamInfo.obj
+.\Debug\ExamOnline.obj
+.\Debug\EXAMRESULT.obj
+.\Debug\Register.obj
+.\Debug\StdAfx.obj
+.\Debug\TextManage.obj
+.\Debug\EXAM.res
+.\Debug\AddTest.obj
+.\Debug\AddSubject.obj
+.\Debug\TestChange.obj
+.\Debug\TextGrade.obj
+]
+Creating command line "link.exe @C:\Users\wu\AppData\Local\Temp\RSPC01B.tmp"
+<h3>Output Window</h3>
+Compiling...
+TextGrade.cpp
+d:\examonline\exam\debug\msado15.tlh(476) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+d:\examonline\exam\examresult.h(9) : warning C4067: unexpected tokens following preprocessor directive - expected a newline
+Linking...
+Creating temporary file "C:\Users\wu\AppData\Local\Temp\RSPC3C4.tmp" with contents
+[
+/nologo /o"Debug/EXAM.bsc" 
+.\Debug\StdAfx.sbr
+.\Debug\ADOConn.sbr
+.\Debug\EXAM.sbr
+.\Debug\EXAMDlg.sbr
+.\Debug\ExamInfo.sbr
+.\Debug\ExamOnline.sbr
+.\Debug\EXAMRESULT.sbr
+.\Debug\Register.sbr
+.\Debug\TextManage.sbr
+.\Debug\AddTest.sbr
+.\Debug\AddSubject.sbr
+.\Debug\TestChange.sbr
+.\Debug\TextGrade.sbr]
+Creating command line "bscmake.exe @C:\Users\wu\AppData\Local\Temp\RSPC3C4.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+EXAM.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
